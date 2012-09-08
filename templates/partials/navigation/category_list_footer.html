@@ -1,0 +1,23 @@
+foreach $root do
+  if $children do
+    if @is_first do
+       
+    <div>
+    <ul class="project-list-footer">
+    foreach $children[0:5] do
+    	
+    	<li>
+
+    			<a href="@url">
+    				<span class="title">@title</span>
+    				<!-- <span class="date">@date</span> -->
+    			</a>
+   
+    		
+    	</li>
+    endforeach
+    </ul>
+    </div>
+   endif
+  endif
+endforeach

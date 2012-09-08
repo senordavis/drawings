@@ -1,0 +1,490 @@
+/* !Less */
+
+@mdavisblue: #4D90FE; 
+
+.roundedCorners (@radius: 4px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+
+/* !Layout */
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0px 0px 100px 0px;
+	padding: 0px;
+	font-weight: 300;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+header {
+	height: 70px;
+	background: url(../../images/light_noise_diagonal.png) top left;
+	background-color: #EEE;
+	padding-top: 30px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #DDD;
+}
+
+.logo {
+	text-indent: -10000px;
+	width: 250px;
+	height: 125px;
+	display: block;
+	background: url(../../images/mdavisCourses-logo-white.png) top left no-repeat;
+	margin-top: -26px;
+}
+
+
+div.container{
+	width: 920px;
+	
+}
+
+#intro {
+	background: url(../../images/light_noise_diagonal.png) top left;
+	height: 250px;
+	margin-top: -50px;
+	margin-bottom: -10px;
+	position: relative;
+	z-index: 100;
+	border-bottom: 1px solid #CCC;
+	outline: 1px solid #EEE;
+	
+	p.description {
+	float: right;
+	width: 540px;
+	margin: 50px 0;
+}
+
+}
+
+
+
+h1 {
+	margin: 0px;
+	line-height: .8em;
+	font-size: 3em;
+	margin-top: -5px;
+	font-weight: 300;
+}
+
+ul.project-list {
+	width: 960px !important;
+	display: block;
+	clear: both;
+	
+	li {
+	width: 300px;
+	float: left;
+	display: block;
+	padding-bottom: 20px;
+}	
+}
+
+
+ul.project-list-footer {
+	display: block;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	
+	li {
+	float: left;
+	clear: both;
+	display: block;
+	padding-bottom: 0px;
+	width: 100%;
+	padding: 2px;
+}
+
+li a{
+	padding: 5px;
+}
+
+}
+
+a {
+	padding: 5px;
+}
+
+a:hover{
+	.roundedCorners
+}
+
+
+footer a {
+	color: white;
+}
+
+
+#media {
+	overflow: hidden;
+}
+
+.category {
+	height: 60px;
+	display: block;
+	clear: both;
+	width: 960px;
+	border-top: 1px solid #ccc;
+}
+
+.category p {
+	padding: 20px 10px;
+	font-weight: bold;
+}
+
+.categoryDescription {
+	border-bottom: 1px solid #ccc;
+	padding: 20px 0px;
+	margin-bottom: 40px;
+}
+
+.thumbnail {
+	width: 300px;
+	height: 205px;
+}
+
+.thumbnail img {
+	position: absolute;
+	margin-top: -205px;
+	width: 300px;
+	height: 205px;
+	overflow: hidden;
+}
+.thumbnail a {
+	background-color: transparent;
+	display: block;
+	width: 260px;
+  	height: 165px;
+	padding: 20px;
+	position: relative;
+	z-index: 10;
+	opacity: 0;
+	margin-left: 0px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+.thumbnail a:hover {
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.8);
+	display: block;
+	width: 260px;
+  	height: 165px;
+	opacity: 1;
+}
+
+.thumbnail a span.title {
+	border-bottom: 1px solid white;
+	padding-bottom: 10px;
+	width: 260px;
+	display: block;
+	font-weight: bold;
+}
+
+.thumbnail a span.description{
+	font-size: .8em;
+	display: block;
+	padding-top: 10px;
+}
+
+.thumbnail a span.date{
+	color: #999;
+	display: block;
+	text-transform: uppercase;
+	font-size: .8em;
+	position: absolute;
+	bottom: 20px;
+}
+
+.summary {}
+
+#gallery-info {
+	width: 540px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+
+#gallery-count {
+	float: left;
+}
+
+#gallery-navigation {
+	float: right;
+}
+
+hr.push{
+	display: block;
+	height: 300px;
+	overflow: hidden;
+	visibility: hidden;
+	clear: both;
+}
+footer {
+	background: url(../../images/low_contrast_linen.png) top left;
+	clear: both;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 250px;
+	padding-top: 25px;
+	font-size: .8em;
+	z-index: 10000;
+	border-top: 1px solid #CCC;
+	outline: 1px solid #EEE;
+	color: #888;
+}
+
+/*
+	The .container background color rule
+	is for testing purposes only.
+	to ensure that the maximum possible
+	width is being used. Some of the column
+	widths have been adjusted to suit this.
+*/
+/*
+.container {
+	background-color: green;
+}
+*/
+
+/*
+footer span {
+	background-color: aqua;	
+}
+*/
+
+footer span.two {
+	text-align: right;
+	width: 160px;
+}
+
+/* !Colors */
+
+::selection {background-color: @mdavisblue; color: white;}
+
+a {
+	color: @mdavisblue;
+	padding: 2px;
+	margin: -2px;
+}
+
+a:hover {
+	color: white;
+	background-color: @mdavisblue;
+}
+
+a.logo:hover {
+	background-color: transparent;
+}
+
+
+header em a {
+	color: #AAA;
+	padding: 5px;
+	margin: 0px 20px 0px -5px;
+}
+
+header em a:hover {
+	color: white;
+	background-color: @mdavisblue;
+	.roundedCorners
+}
+
+h1 a:hover{
+	background-color: transparent;
+	color: @mdavisblue;
+}
+
+.description p {
+	color: #888;
+}
+
+.description p.date {
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size: .8em;
+}
+
+.leftInfo {
+	margin-top: -20px;
+}
+
+.copyright {
+	margin-top: 20px;
+}
+
+
+.credits {
+	border-top: 1px solid #888;
+	padding-top: 5px;
+	
+	a {
+		color: #AAA;
+	}
+	
+	a:hover {
+		color: white;
+	}
+}
+
+a.atom-rss {
+	background-color: #888;
+	font-weight: bold;
+	color: white;
+	padding: 5px;
+	.roundedCorners
+}
+
+a.atom-rss:hover {
+	background-color: @mdavisblue;
+}
+
+/* !Backflip jQuery Carousel */
+
+.carousel {
+	list-style-type: none;
+	padding: 0;
+}
+
+.carousel-frame {
+	/* overflow: hidden; */
+	position: relative;
+	border-bottom: 1px solid #999;
+}
+
+.carousel-slider {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	/* Trigger hardware acceleration */
+		   -moz-transform: translateZ(0);
+		    -ms-transform: translateZ(0);
+		     -o-transform: translateZ(0);
+		-webkit-transform: translateZ(0);
+	transform:             translateZ(0);
+	width: 100%;
+}
+.carousel-slide {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+/* Prev / next navigation */
+.carousel-nav {
+	margin: 0.5em 0;
+	zoom: 1;
+ 	float: right;
+ 	padding: 5px;
+ 	text-align: right;
+}
+.carousel-nav:before,
+.carousel-nav:after {
+	content: "";
+	display: table;
+}
+.carousel-nav:after {
+	clear: both;
+}
+.carousel-nav span {
+	cursor: pointer;
+	float: left;
+}
+.carousel-nav .carousel-next {
+	color: @mdavisblue;
+	padding: 5px;
+	
+}
+.carousel-nav .carousel-next:hover {
+	color: white;
+	background-color: @mdavisblue;
+	.roundedCorners
+	
+}
+
+.carousel-nav .carousel-prev {
+	color: @mdavisblue;
+	padding: 5px;
+	border-right: 1px solid #999;
+	
+}
+
+.carousel-nav .carousel-prev:after {
+	content: " ";
+	
+}
+.carousel-nav .carousel-prev:hover {
+	color: white;
+	background-color: @mdavisblue;
+	.roundedCorners
+	
+}
+.carousel-nav .state-disabled {
+	color: #999;
+	cursor: default;
+	outline: none;
+}
+
+.carousel-nav .state-disabled:hover {
+	color: #999;
+	cursor: default;
+	outline: none;
+	background: transparent;
+}
+
+/* Counter ("slide x of y") */
+.carousel-counter {
+	margin: 0.5em 0;
+	padding: 10px;
+	border-bottom: 1px solid #999;
+	
+}
+
+/* Handles */
+.carousel-handles {
+	margin: 0.5em auto;
+	text-align: center;
+	padding: 10px;
+	position: absolute;
+	margin-top: -98px;
+	font-size: 12px;
+	width: 520px;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.5);
+}
+.carousel-handles span {
+	cursor: pointer;
+	margin: 0 0.2em;
+	padding: 2px 5px;
+	color: white;
+}
+.carousel-handles .state-disabled {
+	color: white;
+	cursor: default;
+	outline: none;
+	padding: 2px 5px;
+}
+.carousel-handles .state-current {
+	color: white;
+	cursor: default;
+	outline: none;
+	background-color: @mdavisblue;
+	padding: 2px 5px;
+	.roundedCorners
+}
