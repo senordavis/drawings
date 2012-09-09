@@ -1,5 +1,31 @@
+<a href="./">Home</a>
+
 foreach $root do
-  if !$children do
+
     <a href="@url">@title</a>
-  endif
+
 endforeach
+
+
+<a class="wepay-widget-button" id="wepay_widget_anchor_504bff690e51e" href="https://www.wepay.com/stores/279479">View Cart</a>
+<script type="text/javascript">
+	var WePay = WePay || {};
+	WePay.load_widgets = WePay.load_widgets || function() { };
+	WePay.widgets = WePay.widgets || [];
+	WePay.widgets.push( {
+		object_id: 279479,
+		widget_type: "store_cart_view",
+		anchor_id: "wepay_widget_anchor_504bff690e51e",
+		widget_options: {
+			show_item_count: true,
+			button_text: "View Cart"
+		}
+	});
+	if (!WePay.script) {
+		WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;
+		WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);
+	} else if (WePay.load_widgets) {
+		WePay.load_widgets();
+	}
+</script>

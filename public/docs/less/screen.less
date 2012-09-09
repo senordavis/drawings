@@ -1,6 +1,8 @@
 /* !Less */
 
-@mdavisblue: #4D90FE; 
+@mdavisbluegreen: rgb(25,120,126);
+@mdavislightbluegreen: rgb(126, 204, 169);
+ 
 
 .roundedCorners (@radius: 4px) {
 	-webkit-border-radius: @radius;
@@ -26,21 +28,23 @@ body {
 }
 
 header {
-	height: 70px;
-	background: url(../../images/light_noise_diagonal.png) top left;
-	background-color: #EEE;
+	height: 140px;
 	padding-top: 30px;
 	margin-bottom: 50px;
-	border-bottom: 1px solid #DDD;
+	position: relative;
+	z-index: 200;
 }
 
 .logo {
 	text-indent: -10000px;
 	width: 250px;
-	height: 125px;
+	height: 145px;
 	display: block;
-	background: url(../../images/mdavisCourses-logo-white.png) top left no-repeat;
-	margin-top: -26px;
+	background-image: url(../../images/mdavisDrawingsLogo.png);
+	background-image: none,url(../../images/mdavisDrawingsLogo.svg),url(../../images/space.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	margin-top: -10px;
 }
 
 
@@ -49,20 +53,29 @@ div.container{
 	
 }
 
+.nav {
+	position: relative;
+	top: 50px;
+	text-align: right;
+}
+
+.nav a:hover {
+	color: @mdavisbluegreen;
+	background: transparent;
+}
+
 #intro {
-	background: url(../../images/light_noise_diagonal.png) top left;
-	height: 250px;
-	margin-top: -50px;
+	height: 550px;
+	margin-top: -220px;
 	margin-bottom: -10px;
 	position: relative;
 	z-index: 100;
-	border-bottom: 1px solid #CCC;
-	outline: 1px solid #EEE;
+	/* background-color: rgba(255,255,230,1); */
 	
-	p.description {
-	float: right;
+	.introText {
+	
 	width: 540px;
-	margin: 50px 0;
+	margin: 200px 0 0;
 }
 
 }
@@ -76,6 +89,62 @@ h1 {
 	margin-top: -5px;
 	font-weight: 300;
 }
+
+.description h1 {
+	/* border-bottom:  1px solid #CCC; */
+	padding-bottom: 10px;
+	margin-bottom: -20px;
+	position: relative;
+	z-index: 100;
+}
+
+h1,h2,h3 {
+	font-weight: 300;
+}
+
+div.col.seven {
+
+	h2 {
+	color: #333;
+	/*border-top: 1px solid #CCC;*/
+	border-bottom: 1px solid #CCC;
+	font-size: 1.5em;
+	}
+	
+	h2:nth-child(n+6) {
+		margin-top: 50px;
+	}
+	
+	p {
+	margin-bottom: 20px;
+	margin-left: 10px;
+	}
+	
+	ol,ul,p {
+	font-family: Merriweather, serif;
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #595959;	
+	}
+}
+
+
+.keywords, .author {
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.by {
+	font-size: .75em;
+}
+
+.descriptionContent{
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 5px;
+}
+
 
 ul.project-list {
 	width: 960px !important;
@@ -135,7 +204,6 @@ footer a {
 	display: block;
 	clear: both;
 	width: 960px;
-	border-top: 1px solid #ccc;
 }
 
 .category p {
@@ -235,7 +303,7 @@ hr.push{
 	clear: both;
 }
 footer {
-	background: url(../../images/low_contrast_linen.png) top left;
+	background: url(../../images/darkdenim3.png) top left;
 	clear: both;
 	position: absolute;
 	bottom: 0px;
@@ -247,6 +315,14 @@ footer {
 	border-top: 1px solid #CCC;
 	outline: 1px solid #EEE;
 	color: #888;
+}
+
+.footerlogo {
+	width: 150px;
+	height: 150px;
+	float: left;
+	background-image: url(../../images/mdavisDrawingsFooterLogo.png);
+	background-image: none,url(../../images/mdavisDrawingsFooterLogo.svg),url(../../images/space.gif);
 }
 
 /*
@@ -275,17 +351,17 @@ footer span.two {
 
 /* !Colors */
 
-::selection {background-color: @mdavisblue; color: white;}
+::selection {background-color: @mdavisbluegreen; color: white;}
 
 a {
-	color: @mdavisblue;
+	color: @mdavisbluegreen;
 	padding: 2px;
 	margin: -2px;
 }
 
 a:hover {
 	color: white;
-	background-color: @mdavisblue;
+	background-color: @mdavisbluegreen;
 }
 
 a.logo:hover {
@@ -301,13 +377,13 @@ header em a {
 
 header em a:hover {
 	color: white;
-	background-color: @mdavisblue;
+	background-color: @mdavisbluegreen;
 	.roundedCorners
 }
 
 h1 a:hover{
 	background-color: transparent;
-	color: @mdavisblue;
+	color: @mdavisbluegreen;
 }
 
 .description p {
@@ -332,6 +408,8 @@ h1 a:hover{
 .credits {
 	border-top: 1px solid #888;
 	padding-top: 5px;
+	width: 210px;
+	float: right;
 	
 	a {
 		color: #AAA;
@@ -351,7 +429,7 @@ a.atom-rss {
 }
 
 a.atom-rss:hover {
-	background-color: @mdavisblue;
+	background-color: @mdavisbluegreen;
 }
 
 /* !Backflip jQuery Carousel */
@@ -407,19 +485,19 @@ a.atom-rss:hover {
 	float: left;
 }
 .carousel-nav .carousel-next {
-	color: @mdavisblue;
+	color: @mdavisbluegreen;
 	padding: 5px;
 	
 }
 .carousel-nav .carousel-next:hover {
 	color: white;
-	background-color: @mdavisblue;
+	background-color: @mdavisbluegreen;
 	.roundedCorners
 	
 }
 
 .carousel-nav .carousel-prev {
-	color: @mdavisblue;
+	color: @mdavisbluegreen;
 	padding: 5px;
 	border-right: 1px solid #999;
 	
@@ -431,7 +509,7 @@ a.atom-rss:hover {
 }
 .carousel-nav .carousel-prev:hover {
 	color: white;
-	background-color: @mdavisblue;
+	background-color: @mdavisbluegreen;
 	.roundedCorners
 	
 }
@@ -484,7 +562,50 @@ a.atom-rss:hover {
 	color: white;
 	cursor: default;
 	outline: none;
-	background-color: @mdavisblue;
+	background-color: @mdavisbluegreen;
 	padding: 2px 5px;
 	.roundedCorners
+}
+
+/* WePay Overrides */
+.addToCartButton {
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.35) !important;
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+background-repeat: repeat-x !important;
+background-color: @mdavislightbluegreen !important;
+background-image: -webkit-linear-gradient(-90deg, @mdavislightbluegreen, @mdavisbluegreen) !important;
+background-image: -moz-linear-gradient(-90deg, @mdavislightbluegreen, @mdavisbluegreen) !important;
+background-image: -ms-linear-gradient(-90deg, @mdavislightbluegreen, @mdavisbluegreen) !important;
+background-image: -o-linear-gradient(-90deg, @mdavislightbluegreen, @mdavisbluegreen) !important;
+background-image: linear-gradient(-90deg, @mdavislightbluegreen, @mdavisbluegreen) !important;
+color: white !important;
+text-shadow: 1px 0px 0px @mdavisbluegreen !important;
+border: 1px solid darken(@mdavisbluegreen, 15%) !important;
+margin-top: 10px;
+}
+
+.addToCartButton:hover {
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.35) !important;
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+background-repeat: repeat-x !important;
+background-color: lighten(@mdavislightbluegreen, 8%) !important;
+background-image: -webkit-linear-gradient(-90deg, lighten(@mdavislightbluegreen, 8%), lighten(@mdavisbluegreen, 8%)) !important;
+background-image: -moz-linear-gradient(-90deg, lighten(@mdavislightbluegreen, 8%), lighten(@mdavisbluegreen, 8%)) !important;
+background-image: -ms-linear-gradient(-90deg, lighten(@mdavislightbluegreen, 8%), lighten(@mdavisbluegreen, 8%)) !important;
+background-image: -o-linear-gradient(-90deg, lighten(@mdavislightbluegreen, 8%), lighten(@mdavisbluegreen, 8%)) !important;
+background-image: linear-gradient(-90deg, lighten(@mdavislightbluegreen, 8%), lighten(@mdavisbluegreen, 8%)) !important;
+color: white !important;
+text-shadow: 1px 0px 0px @mdavisbluegreen !important;
+border: 1px solid darken(@mdavisbluegreen, 15%) !important;
+margin-top: 10px;
+}
+
+.wepay-dialog-close a:hover {
+	color: white !important;
+}
+
+.item-price-box {
+	text-align: left !important;
 }
