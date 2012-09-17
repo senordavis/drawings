@@ -4,3 +4,6 @@ profession:
 -
 email: 
 <mike@mdavis.in>
+-
+details:
+All illustrations are printed on bright white, matte photo paper, using a digital printing process to ensure vibrant image quality.

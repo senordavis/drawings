@@ -1,0 +1,33 @@
+title: Pirate Captain
+-
+content: 
+-
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+-
+wepay:
+<a class="wepay-widget-button addToCartButton" id="wepay_widget_anchor_504c034578601" href="https://www.wepay.com/stores/279479/item/723578">Add to Cart</a>
+<script type="text/javascript">
+	var WePay = WePay || {};
+	WePay.load_widgets = WePay.load_widgets || function() { };
+	WePay.widgets = WePay.widgets || [];
+	WePay.widgets.push( {
+		object_id: 723578,
+		widget_type: "store_item_add_to_cart",
+		anchor_id: "wepay_widget_anchor_504c034578601",
+		widget_options: {
+			store_id: 279479,
+			show_item_custom_options: true,
+			show_item_images: false,
+			show_item_price: true,
+			button_text_sold_out: "Sold Out",
+			button_text: "Add to Cart"
+		}
+	});
+	if (!WePay.script) {
+		WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;
+		WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);
+	} else if (WePay.load_widgets) {
+		WePay.load_widgets();
+	}
+</script>

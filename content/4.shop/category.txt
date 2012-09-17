@@ -1,0 +1,5 @@
+title: Shop
+-
+content: @details
+-
+description: These illustrations would look great in your home.
