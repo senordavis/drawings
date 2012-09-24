@@ -1,6 +1,8 @@
-title: Reading by Ghostlight
+title: Moonlight Flight
 -
-description: As the little girl sat on her bed reading the story, she fell more and more into its spellbinding narrative that she didn't notice the scary ghost gathering around her to read it too.
+size: Size: 11 x 14
+-
+description: Maxwell the unicorn smiled as he flew across the mountains. He knew that he and his best friend Bridget were going to see so many wonderful things on their journey to the enchanted forest.
 -
 content:
 -

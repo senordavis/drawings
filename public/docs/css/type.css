@@ -50,3 +50,8 @@
         url('http://mdavisdesign.com/fonts/proximanova/proximanova-light-webfont.ttf') format('truetype'),
         url('http://mdavisdesign.com/fonts/proximanova/proximanova-light-webfont.svg#webfont2rpW2ohz') format('svg');
     }
+
+
+.merriweather {
+	font-family: Merriweather, serif;
+}

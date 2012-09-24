@@ -2,18 +2,20 @@ title: Pirate Captain
 -
 content: 
 -
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+size: Size: 11 x 14
+-
+description: As the Captain leaned over the side of her ship, the salty mist spraying up off the sapphire blue sea, she looked ahead and saw adventure on the horizon.
 -
 wepay:
-<a class="wepay-widget-button addToCartButton" id="wepay_widget_anchor_504c034578601" href="https://www.wepay.com/stores/279479/item/723578">Add to Cart</a>
+<a class="wepay-widget-button addToCartButton" id="wepay_widget_anchor_505bcc24ba9eb" href="https://www.wepay.com/stores/279479/item/465641">Add to Cart</a>
 <script type="text/javascript">
 	var WePay = WePay || {};
 	WePay.load_widgets = WePay.load_widgets || function() { };
 	WePay.widgets = WePay.widgets || [];
 	WePay.widgets.push( {
-		object_id: 723578,
+		object_id: 465641,
 		widget_type: "store_item_add_to_cart",
-		anchor_id: "wepay_widget_anchor_504c034578601",
+		anchor_id: "wepay_widget_anchor_505bcc24ba9eb",
 		widget_options: {
 			store_id: 279479,
 			show_item_custom_options: true,

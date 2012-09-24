@@ -1,13 +1,30 @@
-<a href="./">Home</a>
+<ul>
+	<li><a href="@root_path/">Home</a></li>
+</ul>
 
 foreach $root do
 
-    <a href="@url">@title</a>
+	<ul>
+		<li> <a href="@url">@title</a>
+			if $children do
+			<ul>
+					
+						foreach $children do
+							<li><a href="@url">@title</a></li>
+						endforeach
+					
+			</ul>
+			endif
+		</li>
+	</ul>
 
 endforeach
 
-
+<ul>
+<li>
 <a class="wepay-widget-button" id="wepay_widget_anchor_504bff690e51e" href="https://www.wepay.com/stores/279479">View Cart</a>
+</li>
+</ul>
 <script type="text/javascript">
 	var WePay = WePay || {};
 	WePay.load_widgets = WePay.load_widgets || function() { };
@@ -29,3 +46,5 @@ endforeach
 		WePay.load_widgets();
 	}
 </script>
+
+

@@ -68,73 +68,6 @@ div.container {
   width: 920px;
   background-color: transparent;
 }
-.nav {
-  position: relative;
-  top: 25px;
-  text-align: right;
-  height: 40px;
-}
-.nav em {
-  line-height: 40px;
-}
-.nav .wepay-widget-button {
-  -webkit-border-image: none;
-  -webkit-box-shadow: white 0px 1px 0px 0px inset;
-  -webkit-user-select: none;
-  background-color: #F6F6F6;
-  background-image: -webkit-linear-gradient(-90deg, #ffffff, #ececec);
-  background-repeat: repeat-x;
-  border-bottom-color: lightGrey;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: lightGrey;
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-right-color: lightGrey;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-top-color: lightGrey;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  box-shadow: white 0px 1px 0px 0px inset;
-  box-sizing: border-box;
-  color: #777;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Proxima', Arial, sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: normal;
-  height: 30px;
-  letter-spacing: normal;
-  line-height: 18.049999237060547px;
-  margin-bottom: 0px;
-  margin-left: -5px;
-  margin-right: 20px;
-  margin-top: 0px;
-  min-width: 75px;
-  outline-color: #777;
-  outline-style: none;
-  outline-width: 0px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  position: static;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: white 0px 1px 0px;
-  top: auto;
-  width: 115px;
-}
-.nav a:hover {
-  color: #114f53;
-  background: transparent;
-}
 .introIllustration {
   height: 535px;
   background-color: green;
@@ -159,7 +92,7 @@ div.container {
 }
 #intro .introText {
   width: 360px;
-  margin: -400px 0 0;
+  margin: -335px 0 0;
 }
 h1 {
   margin: 0px;
@@ -181,23 +114,23 @@ h2,
 h3 {
   font-weight: 300;
 }
-div.col.seven h2 {
+#content div.col.seven h2 {
   color: #333;
   /*border-top: 1px solid #CCC;*/
 
   border-bottom: 1px solid #CCC;
   font-size: 1.5em;
 }
-div.col.seven h2:nth-child(n+6) {
+#content div.col.seven h2:nth-child(n+6) {
   margin-top: 50px;
 }
-div.col.seven p {
+#content div.col.seven p {
   margin-bottom: 20px;
   margin-left: 10px;
 }
-div.col.seven ol,
-div.col.seven ul,
-div.col.seven p {
+#content div.col.seven ol,
+#content div.col.seven ul,
+#content div.col.seven p {
   font-family: Merriweather, serif;
   font-size: .9em;
   line-height: 1.5em;
@@ -213,14 +146,21 @@ div.col.seven p {
 .by {
   font-size: .75em;
 }
+.description p.date {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: .8em;
+}
 .descriptionContent {
+  border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
-  padding-bottom: 5px;
+  padding: 16px 0;
 }
 .details {
   font-size: .85em;
   font-weight: 100;
   color: #999;
+  line-height: 1.2em;
 }
 ul.project-list {
   width: 960px !important;
@@ -292,7 +232,7 @@ footer a {
   overflow: hidden;
 }
 .thumbnail a {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.8);
   display: block;
   width: 260px;
   height: 165px;
@@ -304,14 +244,12 @@ footer a {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  color: white;
 }
 .thumbnail a:hover {
-  background-color: #000000;
   background-color: rgba(0, 0, 0, 0.8);
-  display: block;
-  width: 260px;
-  height: 165px;
   opacity: 1;
+  color: white;
 }
 .thumbnail a span.title {
   border-bottom: 1px solid white;
@@ -319,11 +257,13 @@ footer a {
   width: 260px;
   display: block;
   font-weight: bold;
+  color: white;
 }
 .thumbnail a span.description {
   font-size: .8em;
   display: block;
   padding-top: 10px;
+  color: white;
 }
 .thumbnail a span.date {
   color: #999;
@@ -332,6 +272,7 @@ footer a {
   font-size: .8em;
   position: absolute;
   bottom: 20px;
+  color: white;
 }
 #gallery-info {
   width: 540px;
@@ -355,7 +296,9 @@ hr.push {
   clear: both;
 }
 footer {
-  background: url(../../images/darkdenim3.png) top left;
+  background: url(../../images/footerBackground.png) top left;
+  background-color: #2f2f2f;
+  background-repeat: repeat-x;
   clear: both;
   position: absolute;
   bottom: 0px;
@@ -396,6 +339,79 @@ footer span.two {
   text-align: right;
   width: 160px;
 }
+/* !Navigation */
+.nav {
+  position: relative;
+  top: 25px;
+  height: 40px;
+  line-height: 40px;
+}
+.nav a:hover {
+  color: #114f53;
+  background: transparent;
+}
+.navItems {
+  position: relative;
+  left: 135px;
+}
+.homepagenavItems {
+  position: relative;
+  left: 100px;
+}
+.homepagenavItems a {
+  color: white;
+}
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+header li {
+  float: left;
+  position: relative;
+  padding: 5px;
+  margin: 0px 20px 0px -5px;
+}
+header li ul {
+  display: none;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: rgba(25, 120, 126, 0.5);
+}
+header li > ul {
+  top: auto;
+  left: auto;
+}
+header li:hover ul {
+  display: block;
+}
+header li ul li {
+  width: 200px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+header li ul li a {
+  display: block;
+  width: 160px;
+  height: 20px;
+  margin: 0;
+  color: white !important;
+  line-height: 20px;
+}
+header li ul li:hover,
+header li ul li a:hover {
+  width: 190px;
+  background-color: #19787e;
+}
+header ul li a {
+  padding: 5px !important;
+}
 /* !Colors */
 ::selection {
   background-color: #19787e;
@@ -413,31 +429,12 @@ a:hover {
 a.logo:hover {
   background-color: transparent;
 }
-header em a {
-  color: #AAA;
-  padding: 5px;
-  margin: 0px 20px 0px -5px;
+header .nav .navItems a {
+  color: #777;
 }
-header em a:hover {
+header .nav a:hover {
   color: white;
   background-color: #19787e;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-header .homepage em a {
-  color: white;
-  padding: 5px;
-  margin: 0px 20px 0px -5px;
-}
-header em a:hover {
-  color: white;
-  background-color: #19787e;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
 }
 h1 a:hover {
   background-color: transparent;
@@ -446,22 +443,18 @@ h1 a:hover {
 .description p {
   color: #888;
 }
-.description p.date {
-  margin-top: 20px;
-  text-transform: uppercase;
-  font-size: .8em;
-}
 .leftInfo {
   margin-top: -20px;
 }
 .copyright {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .credits {
   border-top: 1px solid #888;
   padding-top: 5px;
-  width: 210px;
-  float: right;
+  width: 400px;
+  float: left;
+  font-size: .95em;
 }
 .credits a {
   color: #AAA;
@@ -613,6 +606,60 @@ a.atom-rss:hover {
   border-radius: 4px;
 }
 /* WePay Overrides */
+.wepay-widget-button {
+  -webkit-border-image: none;
+  -webkit-box-shadow: white 0px 1px 0px 0px inset;
+  -webkit-user-select: none;
+  background-color: #F6F6F6;
+  background-image: -webkit-linear-gradient(-90deg, #ffffff, #ececec);
+  background-repeat: repeat-x;
+  border-bottom-color: lightGrey;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: lightGrey;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: lightGrey;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: lightGrey;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: white 0px 1px 0px 0px inset;
+  box-sizing: border-box;
+  color: #777 !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Proxima', Arial, sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  height: 30px;
+  letter-spacing: normal;
+  line-height: 18.049999237060547px;
+  margin-bottom: 0px;
+  margin-left: -5px;
+  margin-right: 20px;
+  margin-top: 5px !important;
+  min-width: 75px;
+  outline-color: #777;
+  outline-style: none;
+  outline-width: 0px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 6px !important;
+  position: static;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: white 0px 1px 0px;
+  top: auto;
+  width: 115px;
+}
 .addToCartButton {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
@@ -648,7 +695,6 @@ a.atom-rss:hover {
   border-top-width: 1px;
   box-shadow: rgba(255, 255, 255, 0.347656) 0px 1px 0px 0px inset;
   box-sizing: border-box;
-  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: 'Proxima', Arial, sans-serif !important;
@@ -656,12 +702,13 @@ a.atom-rss:hover {
   font-style: normal;
   font-weight: normal;
   height: 40px;
+  line-height: 40px;
   letter-spacing: normal;
   line-height: 18.049999237060547px;
   margin-bottom: -2px;
   margin-left: -2px;
   margin-right: -2px;
-  margin-top: 10px;
+  margin-top: 10px !important;
   min-width: 150px;
   outline-color: white;
   outline-style: none;
@@ -669,7 +716,7 @@ a.atom-rss:hover {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 10px;
+  padding-top: 10px !important;
   text-align: center;
   text-decoration: none;
   text-shadow: none !important;
