@@ -1,9 +1,11 @@
 /* !Less */
 
 @mdavisbluegreen: rgb(25,120,126);
-@mdavisbluegreenAlpha: rgba(25,120,126, .5);
+@mdavisbluegreenAlpha: rgba(25,120,126, .7);
 @mdavislightbluegreen: rgb(126, 204, 169);
- 
+
+@htmlgradientStart: #FFFFE6;
+@htmlgradientEnd: #FFFFFF; 
 
 .roundedCorners (@radius: 4px) {
 	-webkit-border-radius: @radius;
@@ -12,7 +14,51 @@
 	border-radius: @radius;
 }
 
+.htmlBackground () {
+	background-image: -webkit-linear-gradient(@htmlgradientStart 0%, @htmlgradientEnd 100%);
+	background-image: -moz-linear-gradient(@htmlgradientStart 0%, @htmlgradientEnd 100%);
+	background-image: -ms-linear-gradient(@htmlgradientStart 0%, @htmlgradientEnd 100%);
+	background-image: -o-linear-gradient(@htmlgradientStart 0%, @htmlgradientEnd 100%);
+	background-image: linear-gradient(@htmlgradientStart 0%, @htmlgradientEnd 100%);
+	background-repeat: repeat-x;
+}
+
 @-webkit-keyframes drop {
+	from {
+		top: -3%;
+		
+	}
+
+	80% {
+		top: -1%;
+
+	}	
+	
+	60% {
+		top: 0;
+
+	}
+	
+	40% {
+		top: -1%;
+	}
+	
+	20% {
+		top: -2%;
+
+	}
+	
+	10% {
+		top: -2.5%;
+	}
+	
+	to {
+		top: -3%;
+
+	}
+}
+
+@-moz-keyframes drop {
 	from {
 		top: -3%;
 		
@@ -54,22 +100,13 @@ html, body {
 }
 
 html {
-	/* 	background-color: rgba(255,255,230,1); */
-	
-	background-image: -webkit-linear-gradient(#FFFFE6 0%, #ffffff 100%);
-	background-image: -moz-linear-gradient(#FFFFE6 0%, #ffffff 100%);
-	background-image: -ms-linear-gradient(#FFFFE6 0%, #ffffff 100%);
-	background-image: -o-linear-gradient(#FFFFE6 0%, #ffffff 100%);
-	background-image: linear-gradient(#FFFFE6 0%, #ffffff 100%);
-	
-	background-repeat: repeat-x;
+	.htmlBackground;
 }
 
 body {
-	margin: 0px 0px 100px 0px;
+	margin: 0px auto;
 	padding: 0px;
-	font-weight: 300;
-	
+	font-weight: 300;	
 }
 
 #wrapper {
@@ -99,27 +136,36 @@ header {
 
 
 div.container{
-	width: 920px;
+	width: 900px;
 	background-color: transparent;
 	
 }
 
 .introIllustration {
 	height: 535px;
-	background-color: green;
 	background-image: url(../../images/explorer.png);
-	background-image: none,url(../../images/explorer.svg),url(../../images/space.gif);
-	background-position-x: right;
+	/* background-image: none,url(../../images/explorer.svg),url(../../images/space.gif); */
+	background-position: top right;
 	background-repeat: no-repeat;
 	
 	position: relative;
 	top: -10px;
-	right: -10px;
+	right: 0px;
 	
 	-webkit-animation-name: drop;
 	-webkit-animation-duration: 4s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-perspective: 1000;
+	
+	
+	-moz-animation-name: drop;
+	-moz-animation-duration: 4s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-moz-transform: translate3d(0, 0, 0);
+	-moz-perspective: 1000;
 }
 
 #intro {
@@ -217,15 +263,18 @@ h1,h2,h3 {
 }
 
 ul.project-list {
-	width: 960px !important;
+	width: 930px !important;
 	display: block;
 	clear: both;
+	position: relative;
+	left: -15px;
 	
 	li {
-	width: 300px;
+	width: 300px !important;
 	float: left;
 	display: block;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+	margin: 0px 10px 0px 0px !important;
 }	
 }
 
@@ -273,7 +322,7 @@ footer a {
 	height: 60px;
 	display: block;
 	clear: both;
-	width: 960px;
+/* 	width: 960px; */
 }
 
 .category p {
@@ -290,24 +339,27 @@ footer a {
 .thumbnail {
 	width: 300px;
 	height: 205px;
+	overflow: hidden;
 }
 
 .thumbnail img {
 	position: absolute;
-	margin-top: -205px;
+	margin-top: -406px;
 	width: 300px;
 	height: 205px;
 	overflow: hidden;
 }
 .thumbnail a {
-	background-color: rgba(0,0,0, 0.8);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: transparent;
 	display: block;
-	width: 260px;
-  	height: 165px;
-	padding: 20px;
+	width: 300px;
+  	height: 410px;
+	padding: 205px 20px 20px 20px;
 	position: relative;
 	z-index: 10;
-	opacity: 0;
 	margin-left: 0px;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -316,16 +368,15 @@ footer a {
 }
 
 .thumbnail a:hover {
-	
 	background-color: rgba(0,0,0, 0.8);
-	opacity: 1;
 	color: white;
+	padding-top: 20px;
 }
 
 .thumbnail a span.title {
 	border-bottom: 1px solid white;
 	padding-bottom: 10px;
-	width: 260px;
+	/* width: 260px; */
 	display: block;
 	font-weight: bold;
 	color: white;
@@ -445,7 +496,7 @@ footer span.two {
 
 .homepagenavItems{
 	position: relative;
-	left: 100px;
+	left: 135px;
 }
 
 .homepagenavItems a{
@@ -612,7 +663,7 @@ a.atom-rss:hover {
 		    -ms-transform: translateZ(0);
 		     -o-transform: translateZ(0);
 		-webkit-transform: translateZ(0);
-	transform:             translateZ(0);
+		transform:         translateZ(0);
 	width: 100%;
 }
 .carousel-slide {
@@ -703,6 +754,7 @@ a.atom-rss:hover {
 	background-color: rgb(0,0,0);
 	background-color: rgba(0,0,0, 0.5);
 }
+
 .carousel-handles span {
 	cursor: pointer;
 	margin: 0 0.2em;
@@ -887,4 +939,10 @@ text-shadow: none !important;
 
 #wepay-widgets-dialogs-wrapper, .wepay-widget-dialog .wepay-dialog-topbar h2, .widget-stores {
 	font-family: 'Proxima', Arial, sans-serif !important;
+}
+
+/* !JotForm Overiders */
+
+.form-subHeader {
+	color: aqua !important;
 }
