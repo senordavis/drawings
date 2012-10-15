@@ -1,10 +1,12 @@
 title: Moonlight Flight
 -
+content:
+-
+price: $20.00
+-
 size: Size: 11 x 14
 -
 description: Maxwell the unicorn smiled as he flew across the mountains. He knew that he and his best friend Bridget were going to see so many wonderful things on their journey to the enchanted forest.
 -
-content:
--
-wepay:
-<a class="wepay-widget-button addToCartButton" id="wepay_widget_anchor_507b1d2c53ffe" href="https://www.wepay.com/stores/994427/item/438670">Add to cart</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 438670,widget_type: "store_item_add_to_cart",anchor_id: "wepay_widget_anchor_507b1d2c53ffe",widget_options: {store_id: 994427,show_item_price: true,show_item_images: false,button_text_sold_out: "Sold Out",show_item_custom_options: true,button_text: "Add to cart"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
+cartbutton:
+<a class="wepay-widget-button addToCartButton" id="wepay_widget_anchor_507c3b6a7110e" href="https://www.wepay.com/stores/994427/item/734237">Add to cart</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 734237,widget_type: "store_item_add_to_cart",anchor_id: "wepay_widget_anchor_507c3b6a7110e",widget_options: {store_id: 994427,show_item_price: false,show_item_images: false,button_text_sold_out: "Sold Out",show_item_custom_options: true,button_text: "Add to cart"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>

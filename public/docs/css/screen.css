@@ -235,6 +235,23 @@ h3 {
   border-bottom: 1px solid #CCC;
   padding: 16px 0;
 }
+.price {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1.5em;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 5px;
+}
+.price p {
+  color: #222 !important;
+}
+.size {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
 .details {
   font-size: .85em;
   font-weight: 100;
@@ -467,6 +484,7 @@ footer span.two {
 .homepagenavItems a {
   color: white;
 }
+/* !Suckerfish Main Nav Dropdown */
 header ul {
   list-style-type: none;
   padding: 0;
@@ -496,6 +514,14 @@ header li > ul {
 }
 header li:hover ul {
   display: block;
+  /*
+	
+	If you were to move the position of the suckerfish dropdown this is where it would be set.
+	
+	position: absolute;
+	left: -50px;
+	*/
+
 }
 header li ul li {
   width: 200px;
@@ -519,6 +545,7 @@ header li ul li a:hover {
 header ul li a {
   padding: 5px !important;
 }
+/* End Suckerfish Main Nav Dropdown */
 a.projectTitle {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -650,11 +677,11 @@ a.atom-rss:hover {
   position: relative;
   /* Trigger hardware acceleration */
 
-  -moz-transform: translatez(0);
-  -ms-transform: translatez(0);
-  -o-transform: translatez(0);
-  -webkit-transform: translatez(0);
-  transform: translatez(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   width: 100%;
 }
 .carousel-slide {
@@ -911,6 +938,8 @@ a.atom-rss:hover {
 }
 .wepay-store-widget {
   background-color: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .item-price-box {
   text-align: left !important;
