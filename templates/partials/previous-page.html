@@ -1,3 +1,9 @@
+<!-- 
+
+When Stacey is talking about previous, she's actually talking about the item after this so its actually next.
+
+ -->
+
 foreach $previous_sibling do
-  <p><a href="@url">Previous project</a>: &larr; @title</p>
+  <p><a class="projectTitle nextArrow" href="@url"><span><em>Next:</em><br />@title</span></a></p>
 endforeach

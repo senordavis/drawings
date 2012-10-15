@@ -1,9 +1,40 @@
 title: Contact
 -
 content:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et mauris eu magna convallis cursus. Pellentesque a justo nisl. Duis vel velit at libero ultricies consectetur. Ut sem libero, ornare in ullamcorper eget, molestie sit amet tellus. Aenean auctor porttitor consectetur. Aliquam erat volutpat.
 
-I can be contacted at: @email
+<div class="vcard">
+<p class="org">M.Davis Drawings</p>
+<p class="adr">
+<span class="street-address">P.O.Box 342</span><br />
+<span class="locality">Bath</span>,
+<span class="region">MI</span>
+<span class="postal-code">48808</span>
+</p>
+</div>
+
+<br />
+
+I can be contacted at: <strong>@email</strong>
+
+or by using the form below:
+
+<div id="wufoo-m7x2k5">
+Fill out my <a href="http://mdavisdesign.wufoo.com/forms/m7x2k5">online form</a>.
+</div>
+<script type="text/javascript">var m7x2k5;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'mdavisdesign', 
+'formHash':'m7x2k5', 
+'autoResize':true,
+'height':'517',
+'async':true,
+'header':'show'};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { m7x2k5 = new WufooForm();m7x2k5.initialize(options);m7x2k5.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
 
 -
 description:

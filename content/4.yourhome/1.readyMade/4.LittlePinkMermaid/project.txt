@@ -4,32 +4,7 @@ content:
 -
 size: Size: 11 x 14
 -
-description: As the Captain leaned over the side of her ship, the salty mist spraying up off the sapphire blue sea, she looked ahead and saw adventure on the horizon.
+description: The Little Pink Mermaid swam through the kelp forest to meet her squid friend. She was so excited to show off her newest treasure, the best shell she had ever found.
 -
 wepay:
-<a class="wepay-widget-button addToCartButton" id="wepay_widget_anchor_505bcc24ba9eb" href="https://www.wepay.com/stores/279479/item/465641">Add to Cart</a>
-<script type="text/javascript">
-	var WePay = WePay || {};
-	WePay.load_widgets = WePay.load_widgets || function() { };
-	WePay.widgets = WePay.widgets || [];
-	WePay.widgets.push( {
-		object_id: 465641,
-		widget_type: "store_item_add_to_cart",
-		anchor_id: "wepay_widget_anchor_505bcc24ba9eb",
-		widget_options: {
-			store_id: 279479,
-			show_item_custom_options: true,
-			show_item_images: false,
-			show_item_price: true,
-			button_text_sold_out: "Sold Out",
-			button_text: "Add to Cart"
-		}
-	});
-	if (!WePay.script) {
-		WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;
-		WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);
-	} else if (WePay.load_widgets) {
-		WePay.load_widgets();
-	}
-</script>
+<a class="wepay-widget-button addToCartButton" id="wepay_widget_anchor_507b3640e4e9c" href="https://www.wepay.com/stores/994427/item/536184">Add to cart</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 536184,widget_type: "store_item_add_to_cart",anchor_id: "wepay_widget_anchor_507b3640e4e9c",widget_options: {store_id: 994427,show_item_price: true,show_item_images: false,button_text_sold_out: "Sold Out",show_item_custom_options: true,button_text: "Add to cart"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>

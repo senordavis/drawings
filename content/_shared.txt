@@ -4,6 +4,6 @@ profession:
 -
 address: M.Davis Drawings – P.O. Box 342 – Bath, MI 48808
 -
-email: <mike@mdavis.in>
+email: mike {at} mdavis.in
 -
 details: All illustrations are printed on bright white, matte photo paper, using a digital printing process to ensure vibrant image quality.

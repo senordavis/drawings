@@ -1,11 +1,54 @@
+/*
+                           .                                                    
+                         . ..                                                   
+                         .. .                                                   
+                          ZZZ. .                                                
+                          .Z$ZO?                                                
+                         .. .ZZZZ.                                              
+                   ?:  ... ...$ZZ$,                          . . . .            
+                  $Z$=.   ..  . IZZ=.                       .     .             
+                 .Z+ZZ.  .. ~Z?..,ZZ?.                      ~$ZZZZ$.            
+         =~$ZZI .$Z.IZ ...  +ZZ~. .ZZ=  .   . ... ZZ.Z.  :ZZZ$?=:?ZZ~ .         
+         ZZZZZZ+ Z? :Z, ..  ~ZZ+... Z$. Z$..   .  ZZ Z+ 7ZZ. . .. .    .        
+        .ZZZ +ZZ=Z...Z=...  :ZZ+. . ,ZZ$ZZ+  ..   ZZ.ZZ.Z$7= . .  ..  .         
+        .ZZZ .Z$ZZ...Z7  ... ZZ:  .  ZZZZZ+IZ~ .. ZZ.ZZ+ ?ZZZZZZZ= .. .         
+        .ZZI. ZZZZ...ZZ.   . ZZ:. ...ZZZIZIIZZ.   ZZ.ZZZ  .   ,~$Z$Z=           
+         ZZ=  ZZZ7 ..ZZ:   . ZZ=.   =ZZI:ZZ:ZZ   .$Z.$ZZ  =ZZZZ$Z:.ZZ~ .        
+         ZZ:. ZZZ+. .ZZ?.. ..ZZ+ .. ZZ7.=ZZ.ZZZ~..IZ.+ZZ.Z$$,:7$$Z ,ZI          
+        .ZZ  .ZZZ:.  ZZ$..  .ZZ+. .7ZZ,.ZZZ.ZZZZ:.+Z:,Z$~Z$..+ZZ~ ,ZZ, .        
+         ZZ:  ZZZ. . ZZZ. .  ZZ7 .?ZZZ..ZZZIZ?:$Z$:Z, ZZ+ZZ:  .,?Z$Z, .         
+         ZZ:  ZZZ.   ZZZ   . ZZZ ?ZZZZIOZ.ZZZ, .:Z$7. ZZI.ZZZZZZZI.   .         
+        .Z$:..ZZZ .. Z$Z ...:ZZZZZZ.ZZ$Z?..,..........?ZZ............  .        
+         ZZ:. ZZZ   .IZZ:   ZZZZ$7:$~ZZ+~ZZZZZZZZZZZZZI:=ZZZZZZZZZZZZZ          
+         ZZ~  ZZZ .. .Z$ ...ZZZZ,$ZZZ+ZZ$ZZZZZZZZZZZZZZZZZ$ZZZZZZZZZZZ..        
+         =O,..,++ ... .:Z~  7+ .ZZZZZ7IIO7I7ZZ+Z$Z7Z7$$7ZZ7Z=$$$?ZZZZZ .        
+        . .   . .. .  =ZZ~  . ..ZZZZZ=$$.:Z:Z+,~7? ?.II+.Z+ ZI+ ZZZZZZ .        
+         ..   . ... . .:+    .. Z$ZZZ+II.:I,Z . $ 7 +II+Z.=.Z.7?$=Z$ZZ .        
+                             . .ZZZZZZZZZZZ$ZZZZZZZZZZZZZZZZZZZZZZZZZ$ .        
+                              ..ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ.         
+                             . .. .................................... .     
+                             
+
+Copyright © 2012, M.Davis Drawings, All Rights Reserved.
+M.Davis Drawings – P.O. Box 342 – Bath, MI 48808
+........................................................................
+Credits: Content managed by Stacey 2.3.0.
+Slideshows throughout the site use the backflip/jQuery Carousel.
+Site built using Coda 2, Codekit, CSS3, HTML5, and LESS.
+Illustrations are made using Inkpad for iPad.
+  
+*/ 
+                                                                                
+                                                                          
+                                                                                
 /* !Less */
 
 @mdavisbluegreen: rgb(25,120,126);
 @mdavisbluegreenAlpha: rgba(25,120,126, .7);
 @mdavislightbluegreen: rgb(126, 204, 169);
 
-@htmlgradientStart: #FFFFE6;
-@htmlgradientEnd: #FFFFFF; 
+@gradientStart: #FFFFE6;
+@gradientEnd: #FFFFFF; 
 
 .roundedCorners (@radius: 4px) {
 	-webkit-border-radius: @radius;
@@ -14,13 +57,26 @@
 	border-radius: @radius;
 }
 
-.htmlBackground () {
-	background-image: -webkit-linear-gradient(@htmlgradientStart 0%, @htmlgradientEnd 100%);
-	background-image: -moz-linear-gradient(@htmlgradientStart 0%, @htmlgradientEnd 100%);
-	background-image: -ms-linear-gradient(@htmlgradientStart 0%, @htmlgradientEnd 100%);
-	background-image: -o-linear-gradient(@htmlgradientStart 0%, @htmlgradientEnd 100%);
-	background-image: linear-gradient(@htmlgradientStart 0%, @htmlgradientEnd 100%);
+.gradientBackground () {
+	background-image: -webkit-linear-gradient(@gradientStart 0%, @gradientEnd 100%);
+	background-image: -moz-linear-gradient(@gradientStart 0%, @gradientEnd 100%);
+	background-image: -ms-linear-gradient(@gradientStart 0%, @gradientEnd 100%);
+	background-image: -o-linear-gradient(@gradientStart 0%, @gradientEnd 100%);
+	background-image: linear-gradient(@gradientStart 0%, @gradientEnd 100%);
+	filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{gradientStart}',endColorstr='@{gradientEnd}')" !important;
 	background-repeat: repeat-x;
+}
+
+.boxSizing {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.fade {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 }
 
 @-webkit-keyframes drop {
@@ -100,7 +156,11 @@ html, body {
 }
 
 html {
-	.htmlBackground;
+	/* .htmlBackground; */
+	background-image: url(../../images/explorerBackground.jpg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-attachment: fixed;
 }
 
 body {
@@ -144,7 +204,7 @@ div.container{
 .introIllustration {
 	height: 535px;
 	background-image: url(../../images/explorer.png);
-	/* background-image: none,url(../../images/explorer.svg),url(../../images/space.gif); */
+	/* background-image: none,url(../../images/explorer.svg),url(../../images/space.gif); */  /* Had to turn this option off because it takes to long for that SVG file to load. */
 	background-position: top right;
 	background-repeat: no-repeat;
 	
@@ -305,9 +365,13 @@ a {
 }
 
 a:hover{
-	.roundedCorners
+	.roundedCorners;
 }
 
+
+.content {
+
+}
 
 footer a {
 	color: white;
@@ -338,40 +402,52 @@ footer a {
 
 .thumbnail {
 	width: 300px;
-	height: 205px;
+	height: 225px;
 	overflow: hidden;
 }
 
-.thumbnail img {
+.thumbnail a img {
 	position: absolute;
-	margin-top: -406px;
+	top: 307px;
+	left: 0;
+	padding: 0;
+	margin-top: -305px;
 	width: 300px;
-	height: 205px;
+	height: 225px;
 	overflow: hidden;
+	z-index: -1;
 }
 .thumbnail a {
+	
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	background-color: transparent;
 	display: block;
 	width: 300px;
-  	height: 410px;
-	padding: 205px 20px 20px 20px;
+  	height: 450px;
+	padding: 170px 0px 0px 0px;
 	position: relative;
 	z-index: 10;
 	margin-left: 0px;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
 	color: white;
+	.fade;
 }
 
 .thumbnail a:hover {
+	padding-top: 0px;
+}
+
+.thumbnailContent {
+	.boxSizing;
+	background-color: rgb(0,0,0); /* IE8 Fallback color */
 	background-color: rgba(0,0,0, 0.8);
 	color: white;
-	padding-top: 20px;
+	width: 300px;
+	height: 230px;
+	padding: 20px;
 }
+
 
 .thumbnail a span.title {
 	border-bottom: 1px solid white;
@@ -416,6 +492,11 @@ footer a {
 
 #gallery-navigation {
 	float: right;
+}
+
+.vcard p{
+	 margin-bottom: 0px !important;
+	 font-size: 1.25em !important;
 }
 
 hr.push{
@@ -525,6 +606,7 @@ li ul {
 	top: -50px;
 	left: 0;
 	.roundedCorners;
+	background-color: @mdavisbluegreen;
 	background-color: @mdavisbluegreenAlpha;
 } 
 
@@ -562,6 +644,60 @@ ul li a {
 	padding: 5px !important;
 }
 
+}
+
+a.projectTitle {
+	.boxSizing;
+	display: block;
+	width: 130px;
+	height: 100px;
+	background-color: transparent;
+	float: left;
+	margin-right: 10px;
+}
+
+a.projectTitle:hover {
+	background-color: transparent;
+	color: #888;
+}
+
+.prevArrow{
+	background-image: url(../../images/arrows.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	.fade;
+}
+
+.prevArrow:hover{
+	background-position: -130px 0px;
+}
+
+.nextArrow{
+	background-image: url(../../images/arrows.png);
+	background-repeat: no-repeat;
+	background-position: -390px 0px;
+	.fade;
+}
+
+.nextArrow:hover{
+	background-position: -260px 0px;
+}
+
+
+a.projectTitle span {
+	display: block;
+	padding-top: 155px;
+	visibility: hidden;
+}
+
+a.projectTitle:hover span {
+	padding-top: 55px;
+	visibility: visible;
+}
+
+a.projectTitle span em {
+	font-size: .9em;
+	color: #222;
 }
 
 /* !Colors */
@@ -776,7 +912,7 @@ a.atom-rss:hover {
 	.roundedCorners
 }
 
-/* WePay Overrides */
+/* WePay OverRides */
 
 .wepay-widget-button {
 			-webkit-border-image: none;
@@ -844,6 +980,7 @@ background-image: -moz-linear-gradient(-90deg, @mdavislightbluegreen, @mdavisblu
 background-image: -ms-linear-gradient(-90deg, @mdavislightbluegreen, @mdavisbluegreen) !important;
 background-image: -o-linear-gradient(-90deg, @mdavislightbluegreen, @mdavisbluegreen) !important;
 background-image: linear-gradient(-90deg, @mdavislightbluegreen, @mdavisbluegreen) !important;
+filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{mdavislightbluegreen}',endColorstr='@{mdavisbluegreen}')" !important;
 color: white !important;
 text-shadow: 1px 0px 0px @mdavisbluegreen !important;
 border: 1px solid darken(@mdavisbluegreen, 15%) !important;
@@ -907,6 +1044,7 @@ background-image: -moz-linear-gradient(-90deg, lighten(@mdavislightbluegreen, 8%
 background-image: -ms-linear-gradient(-90deg, lighten(@mdavislightbluegreen, 8%), lighten(@mdavisbluegreen, 8%)) !important;
 background-image: -o-linear-gradient(-90deg, lighten(@mdavislightbluegreen, 8%), lighten(@mdavisbluegreen, 8%)) !important;
 background-image: linear-gradient(-90deg, lighten(@mdavislightbluegreen, 8%), lighten(@mdavisbluegreen, 8%)) !important;
+filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{mdavislightbluegreen}',endColorstr='@{mdavisbluegreen}')" !important;
 color: white !important;
 text-shadow: 1px 0px 0px @mdavisbluegreen !important;
 border: 1px solid darken(@mdavisbluegreen, 15%) !important;
@@ -941,8 +1079,20 @@ text-shadow: none !important;
 	font-family: 'Proxima', Arial, sans-serif !important;
 }
 
-/* !JotForm Overiders */
+/* !JotForm OverRides */
 
 .form-subHeader {
 	color: aqua !important;
+}
+
+/* !AddThis OverRides */
+
+.addthis_toolbox {
+	margin-left: 40px;
+}
+
+.addthis_toolbox a, addthis_toolbox a:hover {
+	background-color: transparent;
+	margin-top: 20px;
+	margin-right: 10px;
 }
