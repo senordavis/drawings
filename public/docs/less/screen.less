@@ -47,8 +47,12 @@ Illustrations are made using Inkpad for iPad.
 @mdavisbluegreenAlpha: rgba(25,120,126, .7);
 @mdavislightbluegreen: rgb(126, 204, 169);
 
+@textColor: #2F2F2F;
+
 @gradientStart: #FFFFE6;
 @gradientEnd: #FFFFFF; 
+
+.merriweather (){ font-family: Merriweather, serif; }
 
 .roundedCorners (@radius: 4px) {
 	-webkit-border-radius: @radius;
@@ -241,6 +245,16 @@ div.container{
 	
 	width: 360px;
 	margin: -335px 0 0;
+	position: relative;
+	z-index: 200;
+	
+	p {
+		.merriweather;
+		color: lighten(@textColor, 20%);
+		font-size: .9em;
+		line-height: 1.5em;
+		margin-bottom: 15px;
+	}
 }
 
 }
@@ -268,7 +282,6 @@ h1,h2,h3 {
 #content div.col.seven {
 
 	h2 {
-	color: #333;
 	/*border-top: 1px solid #CCC;*/
 	border-bottom: 1px solid #CCC;
 	font-size: 1.5em;
@@ -284,10 +297,9 @@ h1,h2,h3 {
 	}
 	
 	ol,ul,p {
-	font-family: Merriweather, serif;
+	.merriweather;
 	font-size: .9em;
 	line-height: 1.5em;
-	color: #595959;	
 	}
 }
 
@@ -313,6 +325,8 @@ h1,h2,h3 {
 	border-top: 1px solid #CCC;
 	border-bottom: 1px solid #CCC;
 	padding: 16px 0;
+	color: lighten(@textColor, 20%) !important;
+	line-height: 1.5em;
 }
 
 .price {
@@ -324,22 +338,26 @@ h1,h2,h3 {
 	margin-bottom: 5px;
 	
 	p {
-	color: #222 !important;
+	color: @textColor !important;
 	}	
 }
 
-.size {
+.cartbutton {
+	display: block;
 	border-bottom: 1px solid #CCC;
 	padding-bottom: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	font-size: 1.2em;
 }
 
 .details {
-	font-size:.85em;
+	display: block;
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 5px;
+	font-size:.75em;
 	font-weight: 100;
-	color:#999;
 	line-height: 1.2em;
+	color: lighten(@textColor, 50%) !important;
 }
 
 ul.project-list {
@@ -415,9 +433,10 @@ footer a {
 }
 
 .categoryDescription {
-	border-bottom: 1px solid #ccc;
+	/* border-bottom: 1px solid #ccc; */
 	padding: 20px 0px;
 	margin-bottom: 40px;
+	width: 920px;
 }
 
 .thumbnail {
@@ -517,6 +536,11 @@ footer a {
 .vcard p{
 	 margin-bottom: 0px !important;
 	 font-size: 1.25em !important;
+}
+
+#wufoo-m7x2k5 {
+	position: relative;
+	top: -30px;
 }
 
 hr.push{
@@ -999,7 +1023,7 @@ a.atom-rss:hover {
 			width: 115px;
 		}
 
-.addToCartButton {
+.addToCartButton, .wepay-green {
 -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
 -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.35) !important;
 box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
@@ -1063,7 +1087,7 @@ text-shadow: none !important;
 width: 150px !important;
 }
 
-.addToCartButton:hover {
+.addToCartButton:hover, .wepay-green:hover {
 -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
 -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.35) !important;
 box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;

@@ -1,7 +1,3 @@
 title: Home
 -
-content:
-#Welcome
-M.Davis Drawings brings you fun and creative artwork for all ages. These imaginative pieces are intended to bring joy to the recipient.
-
-There are ready-made prints in a variety of sizes and custom prints that are sure to delight anyone. For a one of a kind gift you can custom order a drawing of anyone's face, or get something extra special by putting a custom face into one of the already made prints. For a truly personalized piece of artwork, you can commission M.Davis to make you a completely custom drawing.
+content:M.Davis Drawings brings you fun and creative artwork for all ages. These imaginative pieces are intended to bring joy to the recipient. <br /><br /> There are ready-made prints in a variety of sizes and custom prints that are sure to delight anyone. For a one of a kind gift you can custom order a drawing of anyone's face, or get something extra special by putting a custom face into one of the already made prints. For a truly personalized piece of artwork, you can commission M.Davis to make you a completely custom drawing.

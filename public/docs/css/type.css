@@ -1,5 +1,55 @@
 /* !Typography */
 
+/* Nexa */
+@font-face {
+    font-family: 'Nexa';
+    font-weight: normal;
+    src: url('../../fonts/nexa/Nexa_Light-webfont.eot');
+    src: url('../../fonts/nexa/Nexa_Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/nexa/Nexa_Light-webfont.woff') format('woff'),
+         url('../../fonts/nexa/Nexa_Light-webfont.ttf') format('truetype'),
+         url('../../fonts/nexa/Nexa_Light-webfont.svg#nexa_lightregular') format('svg');
+    
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('../../fonts/nexa/Nexa_Regular-webfont.eot');
+    src: url('../../fonts/nexa/Nexa_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/nexa/Nexa_Regular-webfont.woff') format('woff'),
+         url('../../fonts/nexa/Nexa_Regular-webfont.ttf') format('truetype'),
+         url('../../fonts/nexa/Nexa_Regular-webfont.svg#nexa_regularregular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Nexa';
+    font-weight: bold;
+    font-style: normal;
+    src: url('../../fonts/nexa/Nexa_Bold-webfont.eot');
+    src: url('../../fonts/nexa/Nexa_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/nexa/Nexa_Bold-webfont.woff') format('woff'),
+         url('../../fonts/nexa/Nexa_Bold-webfont.ttf') format('truetype'),
+         url('../../fonts/nexa/Nexa_Bold-webfont.svg#nexa_boldregular') format('svg');
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('../../fonts/Nexa_Black-webfont.eot');
+    src: url('../../fonts/Nexa_Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/Nexa_Black-webfont.woff') format('woff'),
+         url('../../fonts/Nexa_Black-webfont.ttf') format('truetype'),
+         url('../../fonts/Nexa_Black-webfont.svg#nexa_blackregular') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+
+/* Proxima */
+
 @font-face {
     font-family: 'Proxima'; 
     font-weight: normal;
@@ -50,6 +100,9 @@
         url('../../fonts/proximanova/proximanova-light-webfont.ttf') format('truetype'),
         url('../../fonts/proximanova/proximanova-light-webfont.svg#webfont2rpW2ohz') format('svg');
     }
+
+
+/* Google Font */
 
 
 .merriweather {

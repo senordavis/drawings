@@ -1,7 +1,7 @@
 title: Contact
 -
 content:
-
+<!--
 <div class="vcard">
 <p class="org">M.Davis Drawings</p>
 <p class="adr">
@@ -14,13 +14,16 @@ content:
 
 <br />
 
+
 I can be contacted at: <strong>@email</strong>
 
 or by using the form below:
+-->
 
 <div id="wufoo-m7x2k5">
-Fill out my <a href="http://mdavisdesign.wufoo.com/forms/m7x2k5">online form</a>.
+<!-- Fill out my <a href="http://mdavisdesign.wufoo.com/forms/m7x2k5">online form</a>. -->
 </div>
+
 <script type="text/javascript">var m7x2k5;(function(d, t) {
 var s = d.createElement(t), options = {
 'userName':'mdavisdesign', 

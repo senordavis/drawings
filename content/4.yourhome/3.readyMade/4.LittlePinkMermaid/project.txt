@@ -1,0 +1,8 @@
+title: Little Pink Mermaid
+-
+content:
+-
+description: The Little Pink Mermaid swam through the kelp forest to meet her squid friend. She was so excited to show off her newest treasure, the best shell she had ever found.
+-
+cartbutton:
+<a class="wepay-widget-button wepay-green" id="wepay_widget_anchor_50b1844becb40" href="https://www.wepay.com/stores/967002/item/917262">Add to cart</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 917262,widget_type: "store_item_add_to_cart",anchor_id: "wepay_widget_anchor_50b1844becb40",widget_options: {store_id: 967002,show_item_price: true,show_item_images: false,button_text_sold_out: "Sold Out",show_item_custom_options: true,button_text: "Add to cart"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
