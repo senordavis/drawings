@@ -1,0 +1,6 @@
+title: <div>Free Face Giveaway!</div>
+-
+content: 
+<script src="//www.punchtab.com/mast/13279/giveaway_widget.js"></script>
+-
+description:
