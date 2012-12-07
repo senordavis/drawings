@@ -1,8 +1,8 @@
-title: Reading by Ghostlight
+title: Melody the Purple Octopus
 -
-content:
+description: @content
 -
-description: As the little girl sat on her bed reading the story, she fell more and more into its spellbinding narrative that she didn't notice the scary ghost gathering around her to read it too.
+content: Melody loves the ocean, and her best friend the Little Purple Mermaid.
 -
 cartbutton:
 <a class="wepay-widget-button wepay-green" id="wepay_widget_anchor_50b185b011589" href="https://www.wepay.com/stores/967002/item/251370">Add to cart</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 251370,widget_type: "store_item_add_to_cart",anchor_id: "wepay_widget_anchor_50b185b011589",widget_options: {store_id: 967002,show_item_price: true,show_item_images: false,button_text_sold_out: "Sold Out",show_item_custom_options: true,button_text: "Add to cart"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
