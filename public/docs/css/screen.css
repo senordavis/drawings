@@ -310,6 +310,7 @@ a:hover {
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  behavior: url(PIE.htc);
 }
 footer a {
   color: white;
@@ -383,6 +384,7 @@ footer a {
   width: 300px;
   height: 230px;
   padding: 20px;
+  behavior: url(PIE.htc);
 }
 .thumbnail a span.title {
   border-bottom: 1px solid white;
@@ -524,6 +526,7 @@ header li ul {
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  behavior: url(PIE.htc);
   background-color: #19787e;
   background-color: rgba(25, 120, 126, 0.7);
 }
@@ -674,6 +677,7 @@ a.atom-rss {
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  behavior: url(PIE.htc);
 }
 a.atom-rss:hover {
   background-color: #19787e;
@@ -739,6 +743,7 @@ a.atom-rss:hover {
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  behavior: url(PIE.htc);
 }
 .carousel-nav .carousel-prev {
   color: #19787e;
@@ -755,6 +760,7 @@ a.atom-rss:hover {
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  behavior: url(PIE.htc);
 }
 .carousel-nav .state-disabled {
   color: #999;
@@ -807,6 +813,7 @@ a.atom-rss:hover {
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  behavior: url(PIE.htc);
 }
 /* WePay OverRides */
 .wepay-widget-button {
@@ -862,6 +869,7 @@ a.atom-rss:hover {
   text-shadow: white 0px 1px 0px;
   top: auto;
   width: 115px;
+  behavior: url(PIE.htc);
 }
 .addToCartButton,
 .wepay-green {
@@ -926,6 +934,7 @@ a.atom-rss:hover {
   text-decoration: none;
   text-shadow: none !important;
   width: 150px !important;
+  behavior: url(PIE.htc);
 }
 .addToCartButton:hover,
 .wepay-green:hover {
@@ -945,17 +954,20 @@ a.atom-rss:hover {
   border: 1px solid #0c3b3e !important;
   margin-top: 10px;
   text-shadow: none !important;
+  behavior: url(PIE.htc);
 }
 .wepay-dialog-close a {
   font-weight: normal !important;
   font-family: 'Proxima', Arial, sans-serif !important;
   text-shadow: none !important;
+  behavior: url(PIE.htc);
 }
 .wepay-dialog-close a:hover {
   color: white !important;
   font-weight: normal !important;
   font-family: 'Proxima', Arial, sans-serif !important;
   text-shadow: none !important;
+  behavior: url(PIE.htc);
 }
 .wepay-store-widget {
   background-color: transparent !important;
