@@ -16,3 +16,20 @@
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	
+ <script>
+		 
+		 //ipad and iphone fix
+if((navigator.userAgent.match(/iPhone/i)) ||
+		(navigator.userAgent.match(/Android/i)) ||
+		(navigator.userAgent.match(/iPod/i)) ||
+		(navigator.userAgent.match(/iPad/i)))
+		
+	{
+    $(".menu li a").click(function(){
+        //we just need to attach a click event listener to provoke iPhone/iPod/iPad's hover event
+        //strange
+    });
+}
+		 
+</script>
