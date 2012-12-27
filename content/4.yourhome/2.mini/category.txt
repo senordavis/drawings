@@ -3,3 +3,5 @@ title: MiniPrints
 content: We have created some great illustrations that are imaginative, creative, and fun. And these prints are smaller so you can get more of them! Individual prints start at $5 and sets of three are $10.
 -
 description: Smaller creative illustrations that will look great anywhere.
+-
+filter:

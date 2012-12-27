@@ -43,11 +43,6 @@ Illustrations are made using Inkpad for iPad.
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-.fade {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-}
 @-webkit-keyframes drop {
   from {
     top: -3%;
@@ -333,8 +328,27 @@ footer a {
   /* border-bottom: 1px solid #ccc; */
 
   padding: 20px 0px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   width: 920px;
+}
+.filterNav {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+#filters {
+  display: inline;
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+}
+#filters li {
+  display: inline;
+  border-right: 1px solid gray;
+  padding: 0 10px;
+}
+#filters li:last-child {
+  border: none;
 }
 .thumbnail {
   width: 300px;
@@ -365,9 +379,10 @@ footer a {
   z-index: 10;
   margin-left: 0px;
   color: white;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .thumbnail a:hover {
   padding-top: 0px;
@@ -582,14 +597,19 @@ a.projectTitle {
 a.projectTitle:hover {
   background-color: transparent;
   color: #888;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .prevArrow {
   background-image: url(../../images/arrows.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .prevArrow:hover {
   background-position: -130px 0px;
@@ -598,9 +618,10 @@ a.projectTitle:hover {
   background-image: url(../../images/arrows.png);
   background-repeat: no-repeat;
   background-position: -390px 0px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .nextArrow:hover {
   background-position: -260px 0px;

@@ -78,11 +78,13 @@ Illustrations are made using Inkpad for iPad.
 	-webkit-box-sizing: border-box;
 }
 
-.fade {
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
+.easeall (@time: 0.5s) {
+	-webkit-transition: all @time ease-in-out;
+	-moz-transition: all @time ease-in-out;
+	-o-transition: all @time ease-in-out;
+	transition: all @time ease-in-out;
 }
+
 
 @-webkit-keyframes drop {
 	from {
@@ -374,6 +376,7 @@ ul.project-list {
 	display: block;
 	padding-bottom: 10px;
 	margin: 0px 10px 0px 0px !important;
+	
 }	
 }
 
@@ -436,8 +439,31 @@ footer a {
 .categoryDescription {
 	/* border-bottom: 1px solid #ccc; */
 	padding: 20px 0px;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 	width: 920px;
+}
+
+.filterNav {
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+#filters {
+	display: inline;
+	margin: 0px;
+	padding: 0;
+	list-style: none;
+
+	li {
+		display: inline;
+		border-right: 1px solid gray;
+		padding: 0 10px;
+	}
+	
+	li:last-child {
+		border: none;
+	}
 }
 
 .thumbnail {
@@ -471,7 +497,7 @@ footer a {
 	z-index: 10;
 	margin-left: 0px;
 	color: white;
-	.fade;
+	.easeall;
 }
 
 .thumbnail a:hover {
@@ -715,13 +741,14 @@ a.projectTitle {
 a.projectTitle:hover {
 	background-color: transparent;
 	color: #888;
+	.easeall;
 }
 
 .prevArrow{
 	background-image: url(../../images/arrows.png);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
-	.fade;
+	.easeall;
 }
 
 .prevArrow:hover{
@@ -732,7 +759,7 @@ a.projectTitle:hover {
 	background-image: url(../../images/arrows.png);
 	background-repeat: no-repeat;
 	background-position: -390px 0px;
-	.fade;
+	.easeall;
 }
 
 .nextArrow:hover{

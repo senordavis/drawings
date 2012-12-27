@@ -1,5 +1,7 @@
 title: The World's Greatest Explorer
 -
+keywords: explorer
+-
 description: As the famous explorer piloted his hot air balloon over the vast amethyst mountains, he could see in the distance the discover of a lifetime.
 -
 content: @description

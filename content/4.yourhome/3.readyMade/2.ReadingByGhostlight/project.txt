@@ -1,5 +1,7 @@
 title: Reading by Ghostlight
 -
+keywords: ghost night
+-
 description: As the little girl sat on her bed reading the story, she fell more and more into its spellbinding narrative that she didn't notice the scary ghost gathering around her to read it too.
 -
 content: @description

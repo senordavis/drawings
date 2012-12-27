@@ -1,5 +1,7 @@
 title: Pirate Captain
 -
+keywords: pirate
+-
 description: As the Captain leaned over the side of her ship, the salty mist spraying up off the sapphire blue sea, she looked ahead and saw adventure on the horizon.
 -
 content: @description

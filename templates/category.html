@@ -5,6 +5,9 @@
 		
 		:head
 		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script src="@root_path/public/docs/js/filters.js"></script>
+		
 	</head>
 	<body>
 	  <div id="wrapper">
@@ -47,6 +50,9 @@
 			</div>
 			
 			<div id="content" class="home">
+			
+				@filter
+				
 				:items_list
 			</div>
 		

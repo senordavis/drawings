@@ -1,5 +1,7 @@
 title: Little Pink Mermaid
 -
+keywords: underwater mermaid
+-
 description: The Little Pink Mermaid swam through the kelp forest to meet her squid friend. She was so excited to show off her newest treasure, the best shell she had ever found.
 -
 content: @description

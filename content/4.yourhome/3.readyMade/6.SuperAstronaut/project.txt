@@ -1,5 +1,7 @@
 title: Super Astronaut
 -
+keywords: space
+-
 description: As the leader of the super astronauts, it was her duty to explore the vast reaches of the universe for the secret that would unlock the mystery of the light coming from the neighboring galaxy.
 -
 content: @description
