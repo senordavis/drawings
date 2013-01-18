@@ -145,6 +145,10 @@ Class PageData {
 
 	# @cache_page
 	$page->bypass_cache = isset($page->data['@bypass_cache']) ? $page->data['@bypass_cache'] : false;
+	
+
+	# @absolute_url
+	$page->absolute_url = $page->data['@base_url'].'/'.str_replace('./','', $page->file_path);
 
   }
 

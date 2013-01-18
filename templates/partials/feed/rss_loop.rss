@@ -1,0 +1,10 @@
+get "/yourhome/readyMade/" do
+  foreach $children do
+
+  :rss_entry
+  :feed_children
+
+endforeach
+end
+
+
