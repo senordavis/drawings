@@ -14,13 +14,7 @@
 
    </description>
    
-   
-
-   
-   <!--
-   <media:thumbnail url="http://www.webmonkey.com/images/monkeyrock-thumb.jpg" height="98" width="145"/>
-   
-<content:encoded>
+   <content:encoded>
    	<![CDATA[
       <p>
           :feed_images
@@ -30,6 +24,9 @@
       </p>
       ]]>
    </content:encoded>
--->
+ 
+   <media:thumbnail url="foreach $images[0:1] do @absolute_url endforeach"/>
+   
+
    
 </item>
